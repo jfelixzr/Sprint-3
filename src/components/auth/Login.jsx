@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {startLoginEmailPassword, startGoogleLogin, startFacebookLogin} from '../../actions/auth'
 import {useForm} from '../../hooks/useForm'
 import { Link } from 'react-router-dom'
-import mLogin from '../../asset/login.jpg'
+import mLogin from '../../asset/logo.png'
 import styled from 'styled-components';
 
 const Logo = styled.img`
@@ -78,11 +78,11 @@ const Login = () => {
                     onClick={handleLogin}
                     disabled={loading}
                 >
-                    Login
+                    Iniciar Sesion
                 </button>
 
                 <div className="text-white p-2">
-                    <p>Login with social networks</p>
+                    <p>Iniciar Sesion con:</p>
 
                     <div className="google-btn btn-danger"  
                          onClick={handleGoogleLogin}>
@@ -93,31 +93,31 @@ const Login = () => {
                                 src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
                                 alt="google button" />
                         </div>
-                        <p className="btn-text">
-                            <b>Sign in with google</b>
-                        </p>
+                       
+                            <b>Google</b>
+                       
                     </div>
                 </div>
                 <div
-                    className="google-btn btn-warning"
+                    className="google-btn btn-primary"
                         onClick={handleFacebookLogin}
                 >
                     <div className="google-icon-wrapper" >
                         <img className="google-icon"
                             src="https://image.flaticon.com/icons/png/512/20/20673.png"
-                            alt="google button" 
-                            width="30px"/>
+                            alt="facebook button" 
+                            />
                     </div>
-                    <p className="btn-text ">
-                        <b>Sign in with Facebook</b>
-                    </p>
+                  
+                        <b>Facebook</b>
+                    
                 </div>
 
                 <Link
                     to="/auth/register"
                     className="link"
                 >
-                    Create new account
+                    Crea una Cuenta
                 </Link>
             </form>
         </div>

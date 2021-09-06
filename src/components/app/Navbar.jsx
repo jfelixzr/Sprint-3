@@ -40,20 +40,18 @@ export const Navbar = () => {
         <img src={logo} alt="logo" />
           
         <Link to="/movie" style={textDecoration}>
-          <li>Todas</li>
+          <li style={{color:"white"}}>Peliculas</li>
         </Link>
-        <Link to="/movie" style={textDecoration}>
-          <li>Mas valoradas</li>
-        </Link>
+      
         <Link to="/agregar" style={textDecoration}>
-          <li>Agregar</li>
+          <li style={{color:"white"}}>Agregar</li>
         </Link>
         <Link to="/buscar" style={textDecoration}>
-          <li>Busca tu pelicula favorita</li>
+          <li style={{color:"white"}}>Busca tu pelicula favorita</li>
         </Link>
         <Link to="/auth" style={textDecoration}>
-        <li onClick={() => dispatch(startLogout())}>
-          logout
+        <li style={{color:"white"}} onClick={() => dispatch(startLogout())}>
+          Cerrar Sesion
         </li>
         </Link>
         <li className="text-danger d-flex">{name}</li>

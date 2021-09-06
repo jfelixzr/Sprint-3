@@ -13,7 +13,7 @@ const Titulo = styled.h1`
     90deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(0, 0, 0, 1) 50%,
-    rgba(103, 252, 69, 1) 100%
+    #4551fc 100%
   );
   color: white;
   margin: 0;
