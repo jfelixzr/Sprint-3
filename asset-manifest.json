@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Sprint-3/static/css/main.e8db0873.chunk.css",
+    "main.js": "/Sprint-3/static/js/main.79147920.chunk.js",
+    "main.js.map": "/Sprint-3/static/js/main.79147920.chunk.js.map",
+    "runtime-main.js": "/Sprint-3/static/js/runtime-main.358c34a7.js",
+    "runtime-main.js.map": "/Sprint-3/static/js/runtime-main.358c34a7.js.map",
+    "static/css/2.f11b92c5.chunk.css": "/Sprint-3/static/css/2.f11b92c5.chunk.css",
+    "static/js/2.0ac9f6a8.chunk.js": "/Sprint-3/static/js/2.0ac9f6a8.chunk.js",
+    "static/js/2.0ac9f6a8.chunk.js.map": "/Sprint-3/static/js/2.0ac9f6a8.chunk.js.map",
+    "index.html": "/Sprint-3/index.html",
+    "static/css/2.f11b92c5.chunk.css.map": "/Sprint-3/static/css/2.f11b92c5.chunk.css.map",
+    "static/css/main.e8db0873.chunk.css.map": "/Sprint-3/static/css/main.e8db0873.chunk.css.map",
+    "static/js/2.0ac9f6a8.chunk.js.LICENSE.txt": "/Sprint-3/static/js/2.0ac9f6a8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.358c34a7.js",
+    "static/css/2.f11b92c5.chunk.css",
+    "static/js/2.0ac9f6a8.chunk.js",
+    "static/css/main.e8db0873.chunk.css",
+    "static/js/main.79147920.chunk.js"
+  ]
+}
