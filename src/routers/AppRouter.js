@@ -16,6 +16,7 @@ import { ListarCard } from "../actions/cardAction";
 import MovieDetail from "../components/app/MovieDetail";
 import { App } from "../container/App";
 import Buscador from "../components/app/Buscador";
+import AppMovie from "../components/app/MovieHome";
 
 const AppRouter = () => {
   const [checking, setChecking] = useState(true);
@@ -49,7 +50,11 @@ const AppRouter = () => {
             component={AuthRouter}
             isAuthenticated={isLooggedIn}
           />
-
+ <PublicRouter
+            path="/auth/home"
+            component={AppMovie}
+            isAuthenticated={isLooggedIn}
+          />
           <PrivateRouter
             exact
             path="/agregar"

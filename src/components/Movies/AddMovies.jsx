@@ -69,7 +69,7 @@ const handlNewCard = (e) => {
         <div className="form-group">
           <input
             type="text"
-            name="Categoria"
+            name="categoria"
             className="form-control mt-1"
             placeholder="Categoria"
             value={categoria}

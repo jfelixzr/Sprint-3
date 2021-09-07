@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import AppMovie from '../components/app/MovieHome';
 
 import Login from '../components/auth/Login'
 import Registro from '../components/auth/Registro'
@@ -20,7 +21,12 @@ export const AuthRouter = () => {
                         path="/auth/register"
                         component={ Registro }
                     />
-
+ <Route
+ exact
+            path="/auth/home"
+            component={AppMovie}
+            
+          />
                     <Redirect to="/auth/login" />
 
                 </Switch>

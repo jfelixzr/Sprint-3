@@ -6,9 +6,10 @@ const initialState = {
         title:'',
         categoria:'',
         description:'',
-        priority:'',
+      
         url:''
-    }
+    },
+    search:[]
 }
 
 export const cardReducer = (state= initialState, action) =>{
@@ -33,6 +34,16 @@ export const cardReducer = (state= initialState, action) =>{
                         ...action.payload
                     }
                 }
+                case types.cardListar:
+                    return {
+                        state,
+                        card: [...action.payload]
+                    }
+                case types.cardListarBusqueda:
+                    return {
+                        ...state,
+                        search: [...action.payload]
+                    }
             case types.cardLogoutClean:
                 return{
                     ...state,
@@ -40,7 +51,7 @@ export const cardReducer = (state= initialState, action) =>{
                         title:"",
                         categoria:"",
                         description:"",
-                        priority: ""
+                        
                     }
                 }
         default:

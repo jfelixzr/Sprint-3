@@ -16,7 +16,7 @@ export const CardNew = (card) => {
             title: card.title,
             categoria: card.categoria,
             description: card.description,
-            priority: card.priority,
+            
             url: fileUrl
         }
         const docRef = await db.collection(`${uid}/Card/data`).add(newCard)
@@ -36,7 +36,7 @@ export const Edit = (card) => {
             title: card.title,
             categoria: card.categoria,
             description: card.description,
-            priority: card.priority,
+           
             url: fileUrl
         }
 
@@ -140,5 +140,35 @@ export const activeCard = (id,card) => {
 export const clearCard = () => {
     return {
         type: types.cardLogoutClean
+    }
+}
+
+
+
+
+
+export const listaSearch = (searchText) => {
+    
+    return async(dispatch, getState) => {
+        const uid = getState().auth.uid;
+        const data = await db.collection(`${uid}/Card/data`).where('title','==',searchText).get();
+        const card = [];
+    
+        data.forEach(cards=>{
+            card.push({
+                uid: cards.id,
+            ...cards.data()
+           })
+        })
+        console.log(card)
+        dispatch(listarSe(card));
+
+    }
+}
+
+export const listarSe = (card) => {
+    return {
+        type: types.cardListarBusqueda,
+        payload: card
     }
 }

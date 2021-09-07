@@ -6,12 +6,12 @@ export const listarMovie = () => {
 
     return async(dispatch) => {
         const data = await db.collection(`/Movies`).get();
-        const  = [];
+        const movie = [];
     
-        data.forEach(hero=>{
+        data.forEach(movies=>{
             movie.push({
-                uid: movie.id,
-            ...movie.data()
+                uid: movies.id,
+            ...movies.data()
            })
         })
         console.log(movie)

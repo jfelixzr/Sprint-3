@@ -4,12 +4,12 @@ import 'firebase/auth';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDcjPcbrTzubivRWjdqsVJ5q7rOQFdV5Oc",
-  authDomain: "sprint3-movies.firebaseapp.com",
-  projectId: "sprint3-movies",
-  storageBucket: "sprint3-movies.appspot.com",
-  messagingSenderId: "908926882126",
-  appId: "1:908926882126:web:53818ae7c00f5a34958e1f"
+  apiKey: "AIzaSyBaXpImKXfIZipl6gaakNJPFiQnE7KuX7Q",
+  authDomain: "proyecto-f0064.firebaseapp.com",
+  projectId: "proyecto-f0064",
+  storageBucket: "proyecto-f0064.appspot.com",
+  messagingSenderId: "98423819394",
+  appId: "1:98423819394:web:042370e138a127d0b8389b"
 };
 
 
